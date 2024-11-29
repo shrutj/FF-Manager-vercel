@@ -1,0 +1,27 @@
+/* AuthPanel.css */
+.auth-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .auth-panel form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .auth-panel input {
+    padding: 10px;
+    width: 200px;
+  }
+  
+  .auth-panel button {
+    padding: 10px;
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

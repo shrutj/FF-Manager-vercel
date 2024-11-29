@@ -1,0 +1,193 @@
+.delivery__container {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: calc(100vh - 200px);
+}
+
+.delivery__header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.delivery__footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: #f2f2f2;
+  border-top: 1px solid #ddd;
+}
+
+.delivery__table-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 95%; /* Reduced max width for the container */
+  margin: auto; /* Center the container */
+  overflow-x: scroll;
+}
+
+.delivery__table {
+  display: block; /* Treat the table as a block element */
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.delivery__table th,
+.delivery__table td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+  max-width: 120px;
+  max-height: 100px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.delivery__table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.delivery__table td:hover {
+  background-color: #f2f2f2;
+}
+.delivery__button {
+  padding: 6px 10px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delivery__button--processed {
+  background-color: #007bff; /* Blue for processed */
+}
+
+.delivery__button--processed:hover {
+  background-color: #0056b3;
+}
+
+.delivery__button--delivered {
+  background-color: #28a745; /* Green for delivered */
+}
+
+.delivery__button--delivered:hover {
+  background-color: #218838;
+}
+
+.delivery__pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.delivery__pagination-button {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.delivery__pagination-button.active {
+  background-color: #28a745;
+  font-weight: bold;
+}
+
+.search__container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search__container input,
+.search__container select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 150px; /* Adjust width as necessary */
+}
+
+
+/* Container for action buttons (alignment and layout) */
+.replacement-actions,
+.return-actions {
+  display: flex;
+  flex-direction: column; /* Stack the buttons vertically */
+  gap: 10px; /* Space between buttons */
+}
+
+/* Individual action button style */
+.process-replacement-btn,
+.reject-replacement-btn,
+.process-return-btn,
+.process-refund-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make buttons stretch across the full width of the column */
+}
+
+/* Button for processing replacement */
+.process-replacement-btn {
+  background-color: #007bff; /* Blue for processing replacement */
+}
+
+.process-replacement-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Button for rejecting replacement */
+.reject-replacement-btn {
+  background-color: #dc3545; /* Red for rejection */
+}
+
+.reject-replacement-btn:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Button for processing return */
+.process-return-btn {
+  background-color: #ffc107; /* Yellow for processing return */
+}
+
+.process-return-btn:hover {
+  background-color: #e0a800; /* Darker yellow on hover */
+}
+
+/* Button for processing refund */
+.process-refund-btn {
+  background-color: #28a745; /* Green for processing refund */
+}
+
+.process-refund-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Optional: Hover effects for the entire row when hovering over buttons */
+.delivery__table td:hover .process-replacement-btn,
+.delivery__table td:hover .reject-replacement-btn,
+.delivery__table td:hover .process-return-btn,
+.delivery__table td:hover .process-refund-btn {
+  opacity: 0.8; /* Slightly reduce opacity when hovering over button */
+}
+
+/* Optional: Make buttons disabled visually when status is not applicable */
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #ccc;
+}

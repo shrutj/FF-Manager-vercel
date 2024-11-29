@@ -1,0 +1,42 @@
+.products-comp-container{
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* 1fr for main content, auto for footer */
+  min-height: 100vh;
+  margin: 0;
+}
+
+.products-container {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: row;
+}
+
+.products-sidebar {
+  width: 12%; /* Fixed width for the sidebar */
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background color */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+
+.products-sidebar button {
+  display: block;
+  width: 100%; /* Button takes the full width of the sidebar */
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  background-color: #FF4500; /* Bootstrap primary color */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.products-sidebar button:hover {
+  background-color: #FF7F50; /* Darker shade on hover */
+}
+
+.products-content {
+  flex: 1; /* This allows the content area to fill the remaining space */
+  padding: 10px;
+  background-color: #ffffff; /* White background for content */
+  max-width: 85vw;
+}

@@ -1,0 +1,193 @@
+.manage-products {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.manage-products__container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 95%;
+}
+
+.manage-products__search-bar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.manage-products__input,
+.manage-products__select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.manage-products__input:focus,
+.manage-products__select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.manage-products__table-container {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.manage-products__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.manage-products__th,
+.manage-products__td {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+  border: 1px solid #ddd;
+  max-height: 120px;
+  transition: background-color 0.2s;
+  font-size: 14px;
+  max-width: 180px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.manage-products__th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+}
+
+.manage-products__td {
+  background-color: #fff;
+}
+
+.manage-products__td input,
+.manage-products__td select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  width: 80px;
+  height: 40px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.manage-products__td.editing input,
+.manage-products__td.editing select {
+  border-color: #007bff;
+}
+
+.manage-products__td input:focus,
+.manage-products__td select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.manage-products__td:hover {
+  background-color: #f9f9f9;
+}
+
+.manage-products__button {
+  padding: 6px 10px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.manage-products__button:hover {
+  background-color: #0056b3;
+}
+
+.manage-products__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.manage-products__pagination-button {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.manage-products__pagination-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.manage-products__pagination-button.active {
+  background-color: #28a745;
+  font-weight: bold;
+  border: 2px solid #004085;
+  color: white;
+  padding: 8px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.manage-products__table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.manage-products__table th:first-child,
+.manage-products__table td:first-child {
+  border-left: 3px solid #007bff;
+}
+
+.manage-products__table th:last-child,
+.manage-products__table td:last-child {
+  border-right: 3px solid #007bff;
+}
+
+/* New CSS for image display */
+.manage-products__td.images {
+  display: flex; /* Arrange images in a row */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  max-width: 180px; /* Set a maximum width for the cell */
+  padding: 5px; /* Padding around the images */
+}
+
+.manage-products__td.images img {
+  height: 50px; /* Set a fixed height for the images */
+  margin-right: 5px; /* Space between images */
+}
+
+/* Hide scrollbar for image container */
+.manage-products__td.images::-webkit-scrollbar {
+  height: 6px; /* Height of the scrollbar */
+}
+
+.manage-products__td.images::-webkit-scrollbar-thumb {
+  background: #007bff; /* Color of the scrollbar */
+  border-radius: 3px; /* Rounded corners */
+}
+
+.manage-products__td.images::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Darker color on hover */
+}
+
+/* Hide scrollbar for other cells */
+.manage-products__td::-webkit-scrollbar {
+  width: 0; /* Hide scrollbar */
+  background: transparent; /* Optional: set background to transparent */
+}

@@ -1,0 +1,62 @@
+.add-product__container {
+    background-color: #F7F7F7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-product__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between input fields */
+  }
+  
+  .add-product__form input,
+  .add-product__form textarea,
+  .add-product__form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  .add-product__form input:focus,
+  .add-product__form textarea:focus,
+  .add-product__form select:focus {
+    border-color: #FF4500; /* Focus color */
+    outline: none;
+  }
+  
+  .add-product__button {
+    background-color: #FF4500; /* Button color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .add-product__button:hover {
+    background-color: #FF7F50; /* Hover color */
+    transform: scale(1.05);
+  }
+
+  .add-product__add-image-button{
+    background-color: #FF4500; /* Button color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .add-product__add-image-button:hover {
+    background-color: #FF7F50; /* Hover color */
+    transform: scale(1.05);
+  }
+  
