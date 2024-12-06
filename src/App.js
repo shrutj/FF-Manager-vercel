@@ -25,14 +25,24 @@ function App() {
       setIsAuthenticated(true);
     }
   }, []);
+  // const firebaseConfig = {
+  //   apiKey: "AIzaSyAwWznhhP09HYpOZAdu55_6KiRhWaTkHog",
+  //   authDomain: "figure-fiesta.firebaseapp.com",
+  //   projectId: "figure-fiesta",
+  //   storageBucket: "figure-fiesta.appspot.com",
+  //   messagingSenderId: "301445630990",
+  //   appId: "1:301445630990:web:d4d95308f81cf31ee5805f",
+  //   databaseURL: "https://figure-fiesta-default-rtdb.firebaseio.com/",
+  // };
+
   const firebaseConfig = {
-    apiKey: "AIzaSyAwWznhhP09HYpOZAdu55_6KiRhWaTkHog",
-    authDomain: "figure-fiesta.firebaseapp.com",
-    projectId: "figure-fiesta",
-    storageBucket: "figure-fiesta.appspot.com",
-    messagingSenderId: "301445630990",
-    appId: "1:301445630990:web:d4d95308f81cf31ee5805f",
-    databaseURL: "https://figure-fiesta-default-rtdb.firebaseio.com/",
+    apiKey: "AIzaSyBcJiEMvAWXoA16tMiwh_VD1g0rDmsRUWg",
+    authDomain: "figure-fiesta-7e575.firebaseapp.com",
+    projectId: "figure-fiesta-7e575",
+    storageBucket: "figure-fiesta-7e575.firebasestorage.app",
+    messagingSenderId: "866889663948",
+    appId: "1:866889663948:web:2ce3def48b74fe5b4b8969",
+    databaseURL: "https://figure-fiesta-7e575-default-rtdb.firebaseio.com/",
   };
 
   const app = initializeApp(firebaseConfig);
