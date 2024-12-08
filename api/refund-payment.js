@@ -19,7 +19,7 @@ module.exports = async (req, res) => {
       // Make API call to Razorpay to initiate refund
       const refund = await razorpay.payments.refund(paymentId);
 
-      if (refund && refund.status === 'captured') {
+      if (refund && refund.status === 'processed') {
         // Refund successfully processed
         console.log(refund);
         return res.json({ success: true, refundDetails: refund });
